@@ -5,12 +5,12 @@
   "type": "module",
   "homepage": "https://Ksmadi99.github.io/Tunexx",
   "scripts": {
-    "dev": "vite",                  // Run dev server
-    "build": "vite build",          // Build production version
-    "lint": "eslint .",             // Lint your code
-    "preview": "vite preview",      // Preview built version
-    "predeploy": "npm run build",   // Runs automatically before "deploy"
-    "deploy": "gh-pages -d dist"    // Deploys to GitHub Pages
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -29,4 +29,3 @@
     "gh-pages": "^5.0.0"
   }
 }
-
