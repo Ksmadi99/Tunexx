@@ -1,13 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tunexx-website</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TUNEXX</title>
+
+  <!-- Google Font (clean, modern, editorial) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #0a0a0a;
+      --text-main: #ffffff;
+      --text-muted: rgba(255, 255, 255, 0.7);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("/public/group.jpg"); /* CHANGE IMAGE HERE */
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.75);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 1rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+      letter-spacing: 0.25em;
+      color: var(--text-muted);
+      margin-bottom: 0.8rem;
+    }
+
+    .hero span {
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      color: var(--text-muted);
+    }
+
+    /* SCROLL INDICATOR */
+    .scroll {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      color: var(--text-muted);
+      z-index: 2;
+    }
+
+    /* SECOND SECTION */
+    .statement {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      color: #000000;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .statement h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      letter-spacing: 0.2em;
+      font-weight: 400;
+    }
+
+    /* ENTER LINK */
+    .enter {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      text-decoration: none;
+      color: #000;
+      border-bottom: 1px solid transparent;
+      transition: border 0.3s;
+    }
+
+    .enter:hover {
+      border-bottom: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>TUNEXX</h1>
+      <p>WE EXIST ON OUR OWN TERMS</p>
+      <span>DEBUT · EARLY MARCH 2026</span>
+    </div>
+    <div class="scroll">SCROLL</div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="statement">
+    <div>
+      <h2>SEVEN INDIVIDUALS.<br>ONE DIRECTION.</h2>
+      <a href="/home.html" class="enter">ENTER →</a>
+    </div>
+  </section>
+
+</body>
 </html>
