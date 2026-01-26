@@ -1,4 +1,15 @@
 import './App.css'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './index.css'  // or App.css if you prefer
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
+
 import groupPhoto from './assets/group-photo.jpg' // Put your group photo in src/assets/
 
 function App() {
