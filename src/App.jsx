@@ -1,5 +1,4 @@
 import './App.css'
-import groupPhoto from './assets/group-photo.jpg'
 
 function App() {
   const members = [
@@ -21,7 +20,8 @@ function App() {
       </section>
 
       <section className="group-photo">
-        <img src={groupPhoto} alt="Tunexx group" />
+        {/* Use public folder path */}
+        <img src="/assets/group-photo.jpg" alt="Tunexx group" />
       </section>
 
       <section className="members">
@@ -38,5 +38,8 @@ function App() {
     </div>
   )
 }
+
+export default App
+
 
 export default App
