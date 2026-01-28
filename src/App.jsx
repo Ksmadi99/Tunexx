@@ -19,6 +19,11 @@ function App() {
         <span>DEBUT · EARLY MARCH 2026</span>
       </section>
 
+      <section className="hero">
+  <h1>TUNEXX</h1>
+  <p>WE EXIST ON OUR OWN TERMS</p>
+</section>
+
 
       <section className="members">
         <h2>MEMBERS</h2>
