@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
-
-// replace with your actual image paths
 import HeroImage from "/assets/group-photo.jpg";
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    fetch("https://api.countapi.xyz/hit/tunexx-website/visits")
+      .then((res) => res.json())
+      .then((data) => setCount(data.value))
+      .catch((err) => console.error("CountAPI error:", err));
+  }, []);
+
   return (
     <div className="App">
       {/* Hero Section */}
@@ -28,6 +35,11 @@ function App() {
             🐦 X (Twitter)
           </a>
         </div>
+      </section>
+
+      {/* Visitor Count */}
+      <section className="visitor-count">
+        <p>🌟 Visitors so far: {count}</p>
       </section>
 
       {/* Footer */}
