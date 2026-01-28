@@ -1,46 +1,42 @@
-import './App.css'
+import React from "react";
+import "./App.css";
+
+// replace with your actual image paths
+import HeroImage from "/assets/group-photo.jpg";
 
 function App() {
-  const members = [
-    { name: 'PARK DONGGYU', role: 'Leader' },
-    { name: 'KIM INHU', role: 'Oldest' },
-    { name: 'PARK JAEHOON', role: 'Member' },
-    { name: 'MOONSUNGJUN', role: 'Member' },
-    { name: 'TAIRA', role: 'Member' },
-    { name: 'KIM SIHWAN', role: 'Member' },
-    { name: 'ARCTIC', role: 'Youngest' },
-  ]
-
   return (
     <div className="App">
-      <section className="hero">
-        <h1>TUNEXX</h1>
-        <p>WE EXIST ON OUR OWN TERMS</p>
-        <span>DEBUT · EARLY MARCH 2026</span>
-      </section>
+      {/* Hero Section */}
+      <header className="hero">
+        <img className="hero-img" src={HeroImage} alt="TUNEXX Group" />
+        <h1 className="hero-title">T U N E X X</h1>
+        <p className="hero-subtitle">7‑Member K‑pop Pre‑Debut Boy Group</p>
+      </header>
 
-      <section className="hero">
-  <h1>TUNEXX</h1>
-  <p>WE EXIST ON OUR OWN TERMS</p>
-</section>
-
-
-      <section className="members">
-        <h2>MEMBERS</h2>
-        <div className="member-cards">
-          {members.map((m) => (
-            <div className="member-card" key={m.name}>
-              <h3>{m.name}</h3>
-              <p>{m.role}</p>
-            </div>
-          ))}
+      {/* Music Links */}
+      <section className="music-section">
+        <h2>Listen & Follow</h2>
+        <div className="links">
+          <a href="https://music.apple.com" target="_blank" rel="noreferrer">
+            🎧 Apple Music
+          </a>
+          <a href="https://open.spotify.com" target="_blank" rel="noreferrer">
+            🎶 Spotify
+          </a>
+          <a href="https://x.com/TUNEXX_official" target="_blank" rel="noreferrer">
+            🐦 X (Twitter)
+          </a>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>© 2026 TUNEXX Fansite</p>
+      </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
 
-
-export default App
