@@ -19,10 +19,6 @@ function App() {
         <span>DEBUT · EARLY MARCH 2026</span>
       </section>
 
-      <section className="group-photo">
-        {/* Use public folder path */}
-        <img src="/assets/group-photo.jpg" alt="Tunexx group" />
-      </section>
 
       <section className="members">
         <h2>MEMBERS</h2>
