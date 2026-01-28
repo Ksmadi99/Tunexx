@@ -62,3 +62,10 @@ body {
   font-size: 0.9rem;
   opacity: 0.8;
 }
+
+.visitor-count {
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #ff1a75;
+}
+
